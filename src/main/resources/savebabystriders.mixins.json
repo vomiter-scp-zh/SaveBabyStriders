@@ -1,15 +1,14 @@
 {
   "required": true,
-  "minVersion": "0.8",
   "package": "com.vomiter.savebabystriders.mixin",
   "compatibilityLevel": "JAVA_17",
   "mixins": [
     "StriderMixin"
   ],
-  "client": [
-  ],
   "injectors": {
     "defaultRequire": 1
   },
-  "refmap": "savebabystriders.mixins.refmap.json"
+  "overwrites": {
+    "requireAnnotations": true
+	}
 }
