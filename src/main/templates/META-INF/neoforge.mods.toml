@@ -26,17 +26,3 @@ type="required"
 versionRange="${minecraft_version_range}"
 ordering="NONE"
 side="BOTH"
-
-[[dependencies.survivorsdelight]]
-modId="farmersdelight"
-type="required"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
-
-[[dependencies.survivorsdelight]]
-modId="survivorsabilities"
-type="required"
-versionRange="[0,)"
-ordering="AFTER"
-side="BOTH"
