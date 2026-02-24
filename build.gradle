@@ -20,22 +20,6 @@ version = mod_version
 group = mod_group_id
 
 repositories {
-    maven {
-        url "https://maven.latvian.dev/releases"
-        content {
-            includeGroup "dev.latvian.mods"
-            includeGroup "dev.latvian.apps"
-        }
-    }
-
-    maven {
-        url 'https://jitpack.io'
-        content {
-            includeGroup "com.github.rtyley"
-        }
-    }
-
-    // Add here additional repositories if required by some of the dependencies below.
 }
 
 base {
@@ -45,7 +29,7 @@ base {
 // Mojang ships Java 21 to end users in 1.21.1, so mods should target Java 21.
 java.toolchain.languageVersion = JavaLanguageVersion.of(21)
 
-apply from: 'gradle/neo-forge-runs.gradle'
+apply from: 'gradle/neo-forge-runs-scdata.gradle'
 
 dependencies {
 }
