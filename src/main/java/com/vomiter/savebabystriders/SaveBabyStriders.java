@@ -2,7 +2,6 @@ package com.vomiter.savebabystriders;
 
 import com.mojang.logging.LogUtils;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
 import net.minecraftforge.event.server.ServerStartingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -24,11 +23,6 @@ public class SaveBabyStriders
     }
 
     private void commonSetup(final FMLCommonSetupEvent event)
-    {
-    }
-
-    // Add the example block item to the building blocks tab
-    private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
     }
 

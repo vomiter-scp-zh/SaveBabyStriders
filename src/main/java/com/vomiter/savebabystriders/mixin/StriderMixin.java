@@ -44,7 +44,7 @@ public abstract class StriderMixin extends Animal {
             at = {@At("TAIL")}
     )
     private void savebabystriders$autoDismountOnGrow(CallbackInfo ci) {
-        if (!this.level().isClientSide) {
+        if (!this.level.isClientSide) {
             if (Config.ADULT_STRIDER_LEAVES_MOUNT_ON_GROW) {
                 if (this.savebabystriders$wasBaby && !this.isBaby() && this.getVehicle() instanceof Strider) {
                     this.stopRiding();
